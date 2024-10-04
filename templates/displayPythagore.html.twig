@@ -1,4 +1,13 @@
-{% extends 'base.html.twig' %}
+{# templates/displayPythagore.html.twig #}
 
-{% block content %} {{ htmlResponse }} {% endblock %}
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Symfony & table de pythagore</title>
+</head>
+<body>
+    <h1>{{ name }}</h1>
+    {{ tableHtml|raw }}
+</body>
+</html>
