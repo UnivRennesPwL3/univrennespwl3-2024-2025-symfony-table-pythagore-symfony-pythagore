@@ -27,7 +27,6 @@ class PythagoreUtility
             }
             $html .= '</tr>';
         }
-        
         $html .= '</table>';
         
         return $html;
