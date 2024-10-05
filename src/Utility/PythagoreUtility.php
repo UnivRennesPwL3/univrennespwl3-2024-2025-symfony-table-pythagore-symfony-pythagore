@@ -8,7 +8,7 @@ class PythagoreUtility
 {
     public function display(): string
     {
-        $html = '<table border="1">';
+        $html = '<table>';
         
         for ($i = 0; $i <= 10; $i++) {
             $html .= '<tr>';
