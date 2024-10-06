@@ -1,4 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block content %} {{ htmlResponse }} {% endblock %}
+{% block content %} 
+
+<h1>{{ authorName }}</h1>
+
+{{ tablePythagore|raw }}
+
+{% endblock %}
 
