@@ -18,13 +18,14 @@ class PythagoreController extends AbstractController
     }
 
 
-    #[Route('/pythagore', name: 'app_pythagore')]
+    #[Route('/pythagore/view', name: 'app_pythagore')]
     public function DisplayPythagoreAction(): Response
     {
         $table = $this->pythagoreUtility->display();
         return $this->render('displayPythagore.html.twig', [
-            'table' => $table,
-            "name" => "LAWSON-HETCHELY Laté Seth"
+            'title' => 'Symfony & table de pythagore',
+            "name" => "LAWSON-HETCHELY Laté Seth",
+            'table' => $table
         ]);
     }
 }
