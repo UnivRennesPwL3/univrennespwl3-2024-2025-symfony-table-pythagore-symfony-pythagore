@@ -1,4 +1,10 @@
 {% extends 'base.html.twig' %}
+{% block title%} Réalisé par Abel-Horacio SOSSOU {% endblock%}
+{% block content %} 
 
-{% block content %} {{ htmlResponse }} {% endblock %}
+<h1>{{ authorName }}</h1>
+
+{{ tablePythagore|raw }}
+
+{% endblock %}
 
